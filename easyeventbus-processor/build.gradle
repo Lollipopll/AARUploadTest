@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation project(path: ':easyeventbus-api')
+    implementation 'com.squareup:javapoet:1.13.0'// 用来生成java文件
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

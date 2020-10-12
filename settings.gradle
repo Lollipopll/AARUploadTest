@@ -1,0 +1,4 @@
+include ':easyeventbus-processor'
+include ':easyeventbus-api'
+include ':app'
+rootProject.name = "TestApp"
