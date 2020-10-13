@@ -1,7 +1,6 @@
 package com.infinity.testapp
 
 import android.app.Application
-import com.alibaba.android.arouter.launcher.ARouter
 
 /**
  * @author wang
@@ -11,10 +10,10 @@ import com.alibaba.android.arouter.launcher.ARouter
 class MyApp : Application() {
     override fun onCreate() {
         super.onCreate()
-        if (BuildConfig.DEBUG) {
-            ARouter.openDebug()
-            ARouter.openLog()
-        }
-        ARouter.init(this)
+//        if (BuildConfig.DEBUG) {
+//            ARouter.openDebug()
+//            ARouter.openLog()
+//        }
+//        ARouter.init(this)
     }
 }
